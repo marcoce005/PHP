@@ -1,0 +1,27 @@
+					METODI DELLE STRINGHE
+
+lunghezza di una stringa --> strlen($stringa);
+
+confronto di stringhe --> $stringa == "ciro" || strcmp($stringa, $stringa2);
+						return 0 se sonoo uguali
+						return > 0 se la prima stringa è più lunga
+						return < 0 se la seconda stringa è più lunga
+
+rimozione degli spazi -->	ltrim()		// elimina gli spazi all'inizio			|
+				rtrim()		// elimina spazi alla fine			| --> NON IN MEZZO
+				trim ()		// elimina gli spazi sia all'ini che alla fine	|
+
+cercare all'interno di una stringa --> strpos($stringa, $strina_da_trovare, index-dove-iniziare);
+					return int della posizione o false se non trova niente
+
+substring --> substr($str, start, lenght);
+
+convertire in maiuscolo/minuscolo --> strtoupper(); strtolower();
+
+convertire solo il primo carattere in minuscolo/maiuscolo --> ucfirst(); lcfirst();
+
+sostituire una stringa --> str_replace($search, $replace, soggetto_su_cui_si_svolge_il_replace, number_replacement);
+
+split in base ad un carattere --> explode($condizione);
+
+reverse a string --> strrev(%str);

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserisci regista</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 25%;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inserisci registi</h1>
+
+    <form action="./cellini_insert_registi.php" method="post">
+        <div>
+            <label for="codice">Codice:</label>
+            <input type="text" name="code">
+        </div>
+        <div>
+            <label for="codice">Nome:</label>
+            <input type="text" name="name">
+        </div>
+        <div>
+            <label for="nazione">Nazionalità:</label>
+            <input type="text" name="nation">
+        </div>
+        <div>
+            <label for="anno">Anno di nascita:</label>
+            <input type="number" min="1900" max="2024" name="born">
+        </div>
+        <div><input type="submit" value="Invia"></div>
+    </form>
+
+
+    <br><br><a href='cellini_home.html' style='border: 1px solid black; background-color: grey'>back</a>
+</body>
+</html>

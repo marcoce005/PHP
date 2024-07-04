@@ -1,0 +1,20 @@
+			CONNESSIONE AL DB
+
+per connettersi al DB:
+
+	$con = new mysqli('hostname', 'user', 'psw', 'database');
+
+hostname --> URL / indirzzo ip 
+
+ - mysqli_connect_ernno() => gestiamo gli errori della connesione al DB
+
+ - mysqli_select_db('connessione', 'nome DB') => per cambiare la connessione verso il DB
+
+Bisogna sempre chiudere le connessioni: $con->close();
+
+Le query:
+avvengono attraverso un medoto dell'oggetto connessione
+
+	$ris = $con->query('query');
+
+tutte le operazioni CRUD [Create Read Update Delete] avvengono attraverso le query. 

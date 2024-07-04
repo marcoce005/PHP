@@ -1,0 +1,15 @@
+Nome	Ciro Esposito
+Età	28
+Pagamento	Trimestrale
+Prezzo	38.25
+
+Nome	ciro esposito
+Età	18
+Pagamento	Bimestrale
+Prezzo	45
+
+Nome	MArco Tranaso
+Età	17
+Pagamento	Annuale
+Prezzo	28
+

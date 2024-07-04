@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>form</title>
+</head>
+
+<body>
+
+	<form name="module" action="script.php" method="post">
+		<div>
+			<label for="name">Nome e Cognome</label>
+			<input type="text" name="username">
+		</div>
+
+		<div>
+			<label for="stato">Stato Civile:</label><br />
+			<input type="radio" name="civile" value="1">Cogniugato
+			<input type="radio" name="civile" value="0">Non Cogniugato
+		</div>
+
+		<div>
+			<label for="stato">Argomenti di interesse</label><br />
+			<input type="checkbox" name="tecnologia">Tecnologia
+			<input type="checkbox" name="motori">Motori
+			<input type="checkbox" name="viaggi">Viaggi
+		</div>
+
+		<div>
+			Dove hai saputo del nostro sito?
+			<select name="where">
+				<option value="giornali">Giornali</option>
+				<option value="tv">TV</option>
+				<option value="radio">Radio</option>
+			</select>
+		</div>
+
+		<input type="submit" value="Invia">
+		<input type="reset" value="Azzera">
+	</form>
+
+
+</body>
+
+</html>

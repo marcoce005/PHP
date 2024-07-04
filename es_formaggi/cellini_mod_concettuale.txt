@@ -1,0 +1,4 @@
+CASEIFICIO(ID[pk], nome, indirizzo, città, provincia, longitudine, latitudine, nome_titolare)
+IMMAGINI(ID[pk], descirzione, image_path, caseificio[fk])
+FORME(ID[pk], caseificio[fk], data_produzione, stagionatura, scelta, peso, cliente[fk], data_vendita, prezzo)
+CLIENTE(CF[pk], ragionesociale, indirizzo, città)

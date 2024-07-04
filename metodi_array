@@ -1,0 +1,47 @@
+						METODI DEGLI ARRAY
+
+array_change_key_case($array, CASE_UPPER/CASE_LOWER) --> modifica le chiavi rendendole upper o lower case
+[funziona con gli array associativi]
+
+print_r($array) --> stampa tutto l'array
+
+array_column($array, colonna/e) --> restituisce le colonne richieste
+
+array_combine($array1, $array2) --> combina 2 array in base all'indice
+
+array_diff($arr1, $arr2) --> array1 - array2 [rimuove tutte le cose in comune con il secondo array]
+
+array_filter($arr, "funzione") --> filtra l'array in base alla condizione true/false che restituisce la funzione
+
+array_merge($arr1, $arr2) --> fa il merge di n array
+
+array_pop($arr) --> estrae l'ultimo elemento inserito (coda)
+
+array_push($arr, $value) --> aggiunge in coda l'elemento  oppure $array[] = $value
+
+in_array($arr, $value) --> verifica la presenza dell'elemento value
+
+array_sum($arr) --> se numerico fa la somma degli elementi
+
+array_count($arr) --> conta gli elementi dell'array
+[si può passargli una funzione per contare in maniera speciale]
+
+
+Accedere ad un elemento:
+
+current() --> elemento corrente
+
+key() --> restituisce la key dell
+
+next() --> restituisce l'elemento successivo, spostando il puntatore
+
+prev() --> elemento precedente, spostando il puntatore
+
+reset() --> restituisce la testa, spostando il puntatore
+
+end() --> restituisce la coda, spostando il puntatore
+
+Per eliminare un elemento dall'array:
+	unset($arr[index]) --> rimuove l'elemento all'indice index
+	[l'array perde i suoi legami bisogna aggiustarli]
+	array_values() --> aggiusta i puntatori della lista

@@ -1,0 +1,32 @@
+			FILE in PHP
+
+si gestiscono come in C usando:
+	fopen($file) --> aprire file
+	fclose($file) --> chiede file
+	fread($file) --> legge il file
+	fwrite($file, "testo") --> scrive sovrascrivendo
+	unlink($file) --> elimina il file
+	file_exists($file) --> esistenza del file
+	is_writable($file) --> può essere scrivibile
+	is_readable($file) --> può essere leggibile
+	copy() --> fa la copia da un file all'altro
+
+parametri:
+	- r --> solo lettura
+	- r+ --> lettura + scrittura
+	- w --> scrittura
+	- w+ --> scrittura per sovrapposizione (distruttiva)
+	- a --> append/aggiuta
+	- a+ --> append se non c'è il file lo crea
+	- b --> binari
+	- x --> scrittura, se non esiste lo crea, se c'è return false and error
+	- x+ --> scrittura e lettura, se non esiste lo crea, se c'è return false and error
+
+Aprire un file:
+	$file = fopen("/path", "type");
+
+Se il file non viene trovato per terminare il programma si usa die("messaggio");
+
+Oppure:
+	file_get_content();
+	file_put_content();

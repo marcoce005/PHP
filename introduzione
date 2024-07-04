@@ -1,0 +1,89 @@
+												PHP
+
+linguaggio prettamente lato server
+
+start server to debug:
+	php -S localhost:2000/file_path
+
+inizio :	<?php
+fine :		?>
+
+<?php
+	echo "PHP merda"
+?>
+
+si commenta con //
+
+è un linguaggio non tipizzato, dichiarazione variabili:
+	
+	$a = 19;
+
+per ottenere tutte le info della variabile si può fare:
+	var_dump($a);
+
+costante:
+	define('pi', 3.14);
+
+tipi di dati supportati:
+ - boolean
+ - integer
+ - float
+ - string [array di caratteri]
+ - char
+
+Il casting si fa come in C --> (int), (float)...
+
+ARRAY
+ - array scalari --> identifica l'elemento in base al numero della posizione nella sequenza
+ - array associativi --> identifica l'elemento con una chiave univoca
+
+scalare --> $a = [1, 2, 3, 4,];
+associativo --> $a = ["ciro" => "napoletano", "abdull" => "terrorista"];
+
+possono essere non omogenei --> [1, "ciao", [1, 2, 3,]];
+
+per aggiungere un elemento in coda:
+	$x[] = 3;				// oppure
+	array_push($x, 3);
+
+stampare tutto l'array in un colpo solo senza loops
+	echo "print_r($a)";
+
+CONCATENAZIONE DI STRINGE
+per concatenare le strine si usa il punto al posto del +:
+	echo $var1."ciro"."$var2";
+
+
+DATE and DATETIME
+
+per inserire data o ora o entrambe
+
+	date(d-m-Y);			// per stampare la data il '-' in mezzo può essere sostituito a piacere
+	date(H-i-s);			// per stampare l'orario
+	date(d-m-Y - H-i-s);			// per stampare entrambi
+
+OPERATORI MATEMATICI
+come tutti i linguaggi +-*/% sono uguali
+ci sono anche le opzioni:
+	++
+	--
+	+=
+	*=
+	/=
+	.=			--> per contatenare le stringe
+
+OPERATORI DI CONFRONTO
+anche qui sono uguali agli altri 
+	> >= < <= == !=
+
+OPERATORI LOGICI
+come negli altri linguaggi
+	&& || !=
+
+
+CASTING
+si fa come in c
+ $c = (int)(a / b);
+
+verifichiamo la tipologia della variabile con is_int(), is_bool(), is_float(), is_string()
+oppure con var_dump()
